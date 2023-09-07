@@ -37,19 +37,17 @@
 
 
     <main>
-      <section
-        class="bg-cover bg-center bg-hero-image h-auto">
-        <div class="flex flex-col items-center justify-center text-center mx-auto h-screen">
-          <h1 class="font-inter text-[96px] font-bold text-center text-[#fff]">
-            About us
-          </h1>
-          <p class="font-inter text-[48px] font-semibold text-center text-[#fff]">
-            MedEase: Your Healthcare ,Companion.
-          </p>
+      <section>
+        <div class="relative">
+          <img src="assets/hero-image (1).png" alt="Background Image" class="w-full h-auto">
+          <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h1 class="font-inter text-[96px] font-bold">About us</h1>
+            <p class="font-inter text-[30px] font-semibold">MedEase: Your Healthcare, Companion.</p>
+          </div>
         </div>
       </section>
-
-      <section class="bg-gray-100">
+      <section class="bg-gray-100 h-auto relative mt-[-100px] z-10">
 
         <div class="flex justify-center items-center max-w-full h-1/2 text-left text-[rgba(0, 0, 0, 0.71)]">
           <div class="bg-white max-w-md h-full px-8 py-8">
@@ -62,7 +60,7 @@
           <div class="h-screen"><img src="assets/hero-image (3).png" alt="" class="max-w-md h-screen"></div>
         </div>
 
-        <div class="flex justify-center items-center w-[100%]">
+        <div class="flex justify-center items-stretch w-[100%]">
           <div class="max-w-2xl h-screen"><img src="assets/hero-image (2).png" alt="" class="h-screen"></div>
 
         <div class="max-w-2xl bg-white p-8 h-full text-left text-[rgba(0, 0, 0, 0.71)]">
@@ -72,11 +70,11 @@
           </div>
               
            
-          <div class="flex justify-between items-stretch gap-16">
+          <div class="flex justify-between items-stretch gap-16 h-full">
 
             <div class="flex flex-col">
 
-              <div class="flex justify-between items-start gap-6 mb-10 h-full"> 
+              <div class="flex justify-between items-start gap-4 mb-8 h-full"> 
                 <div><i class="fa-solid fa-user text-3xl"></i></div>
                   <div>
                       <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -87,7 +85,7 @@
                 </div>
               </div>
              
-              <div class="flex justify-between items-start gap-6 mb-10 h-full">
+              <div class="flex justify-between items-start gap-4 mb-8 h-full">
                 <div><i class="fa-solid fa-clock text-3xl"></i></div>
                 <div>
                     <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -98,7 +96,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-between items-start gap-6 mb-10 h-full">
+              <div class="flex justify-between items-start gap-4 mb-8 h-full">
                 <div><i class="fa-solid fa-bell text-3xl"></i></div>
                 <div>
                     <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -112,7 +110,7 @@
 
             <div class="flex flex-col items-stretch">
 
-              <div class="flex justify-between items-start gap-6 mb-10 h-full">
+              <div class="flex justify-between items-start gap-4 mb-8 h-full">
                 <div class="w-8"><i class="fa-solid fa-capsules text-3xl"></i></div>
                   <div>
                     <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -123,7 +121,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-between items-start gap-6 mb-10 h-full">
+              <div class="flex justify-between items-start gap-4 mb-8 h-full">
                 <div class="w-8"><i class="fa-solid fa-lightbulb text-3xl"></i></div>
                 <div>
                   <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -134,7 +132,7 @@
                 </div>
               </div>
               
-              <div class="flex justify-between items-start gap-6 mb-10 h-full">
+              <div class="flex justify-between items-start gap-4 mb-8 h-full">
                 <div class="w-8"><i class="fa-solid fa-bell text-3xl"></i></div>
                   <div>
                     <p class="font-inter text-[20px] font-semibold mb-4 text-black-400 leading-6 tracking-[0.2px]">
@@ -152,16 +150,15 @@
     </section>
 
 
-  <section class="pb-[100px] bg-gray-100">
+  <section class="pt-[50px] pb-[100px] bg-gray-100">
     <div class="w-[90%] mx-auto pt-[50px]">
-      <div>
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center mb-10">
           <h2 class="font-inter text-[50px] font-bold">Meet our Team</h2>
           <div class="w-[100px]">
             <ion-icon onclick="left()" class="text-[45px] text-[#0085FF]" name="arrow-back-circle-outline"></ion-icon>
             <ion-icon onclick="right()" class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
           </div>        
-      </div>
+        </div>
   
       <div id="team" class="flex gap-8 mx-auto overflow-x-scroll no-scrollbar scroll-smooth scrollbar-hide items-center">
         <div><img src="assets/Henry.png" alt="" class="max-w-sm"></div>
