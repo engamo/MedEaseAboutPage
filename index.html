@@ -17,7 +17,16 @@
     </style>
   </head>
   <body class="h-full">
-    <header class="flex justify-between items-center px-[50px] p-2 border-b-2">
+      <nav class="flex justify-around items-center my-4">
+        <img src="assets/remove-bg.png" alt="logo" class="w-18 h-16">
+        <div class="flex justify-between items-center">
+        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="#home">Home</a>
+        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="#about">About</a>
+        <a class="px-3 hover:text-black-300 text-2xl  text-blue-600" href="#contact">Contact</a>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-bold py-3 px-8 text-2xl rounded-lg shadow-lee">Login</button>
+      </nav>
+    <!-- <header class="flex justify-between items-center px-[50px] p-2 border-b-2">
       <img src="assets/remove-bg.png" alt="" class="w-[100px]" />
       <nav class="w-[70%] text-2xl">
         <ul class="flex justify-around">
@@ -33,7 +42,7 @@
           Login
         </button>
       </div>
-    </header>
+    </header> -->
 
 
     <main>
@@ -374,13 +383,13 @@
           routine further, making your health a top priority.
         </p>
       </div>
-      <div class="w-[30%] pl-[50px]">
-        <p class="text-2xl font-bold mb-5">NewsLetter</p>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          class="border text-[10px] h-[30px] p-4"
-        />
+      <div class="flex flex-col">
+        <h3 class="text-2xl font-bold mb-5">Newsletter</h3>
+        <div class="custom-div flex items-center bg-gray-200 rounded-md border-solid border-2">
+            <input type="email" id="email" name="email" required class="pl-4 border-none focus:outline-none bg-transparent" placeholder="Enter Email">
+            <i class="fas fa-arrow-right text-2xl text-gray-800 mr-4"></i>
+        </div>
+        <p class="font-small pt-4 text-gray-500">Get Latest Medical Articles</p>
       </div>
     </footer>
     <script src="script.js"></script>
