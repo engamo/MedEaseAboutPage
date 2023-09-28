@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MedEase</title>
-    <link rel="icon" href="assets/remove-bg.png"/>
+    <!-- <link rel="icon" href="assets/remove-bg.png"/> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/098c2dda99.js" crossorigin="anonymous"></script>
     <style>
@@ -23,7 +23,7 @@
         <img src="assets/remove-bg.png" alt="logo" class="w-18 h-16">
         <div class="flex justify-between items-center">
         <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="https://med-ease.vercel.app/">Home</a>
-        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="#about">About</a>
+        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="https://med-ease-about-page.vercel.app/">About</a>
         <a class="px-3 hover:text-black-300 text-2xl  text-blue-600" href="https://med-ease.vercel.app/">Contact</a>
         </div>
         <a href="https://med-ease.vercel.app/"><button type="submit" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-bold py-3 px-8 text-2xl rounded-lg shadow-lee">Login</button></a>
@@ -70,7 +70,7 @@
               <div class="flex flex-col">
   
                 <div class="flex justify-between items-start gap-4 mb-8 h-full"> 
-                  <div><i class="fa-solid fa-user text-3xl"></i></div>
+                  <div><i class="fa-solid fa-user text-3xl text-blue-500"></i></div>
                     <div>
                         <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                         Customized  Profiles</p>
@@ -81,7 +81,7 @@
                 </div>
                
                 <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div><i class="fa-solid fa-clock text-3xl"></i></div>
+                  <div><i class="fa-solid fa-clock text-3xl text-blue-500"></i></div>
                   <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                       Dosage Tracking</p>
@@ -92,7 +92,7 @@
                 </div>
   
                 <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div><i class="fa-solid fa-bell text-3xl"></i></div>
+                  <div><i class="fa-solid fa-bell text-3xl text-blue-500"></i></div>
                   <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                       Medication Reminders</p>
@@ -106,7 +106,7 @@
               <div class="flex flex-col items-stretch">
   
                 <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div class="w-8"><i class="fa-solid fa-capsules text-3xl"></i></div>
+                  <div class="w-8"><i class="fa-solid fa-capsules text-3xl text-blue-500"></i></div>
                     <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                       Refill Status</p>
@@ -117,7 +117,7 @@
                 </div>
   
                 <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div class="w-8"><i class="fa-solid fa-lightbulb text-3xl"></i></div>
+                  <div class="w-8"><i class="fa-solid fa-lightbulb text-3xl text-blue-500"></i></div>
                   <div>
                     <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                   Medication Insights</p>
@@ -128,7 +128,7 @@
                 </div>
                 
                 <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div class="w-8"><i class="fa-solid fa-bell text-3xl"></i></div>
+                  <div class="w-8"><i class="fa-solid fa-bell text-3xl text-blue-500"></i></div>
                     <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                 Emergency Contact</p>
@@ -142,206 +142,11 @@
             </div>
           </div>   
         </section>     
-
-    <section class="pt-[50px] pb-[100px] bg-gray-100">
-      <div class="w-[90%] mx-auto pt-[50px]">
-          <div class="flex justify-between items-center mb-10">
-            <h2 class="font-inter text-[50px] font-bold">Meet our Team</h2>
-            <div class="w-[100px]">
-              <ion-icon onclick="left()" class="text-[45px] text-[#0085FF]" name="arrow-back-circle-outline"></ion-icon>
-              <ion-icon onclick="right()" class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
-            </div>        
-          </div>
-    
-        <div id="team" class="flex gap-8 mx-auto overflow-x-scroll no-scrollbar scroll-smooth scrollbar-hide items-center">
-          <div class="relative group">
-            <img src="assets/Grace.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Adie Grace</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/RedeemingGrace" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/grace-adie-2a316510a/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/meetGraceAdie" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Henry.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Ije Henry</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/henry-ije" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/henry-ije-69b822109/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/henryije" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Aisosa.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Aisosa Margeret</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/Aisosaoyakhire" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/oyakhireaisosamargaret" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/Aisomegoyak" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Kawthar.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Sulaiman Kawthar</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/Sulaimankawthar24" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kawthar-sulaiman" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/KawtharSulaiman" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Soliu.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Adeosun Soliu</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/sawlew" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sawlew" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/sawlew" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Sherifah.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-500">
-              <h3 class="text-3xl">Omitogun Sherifat</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/Adejokemi" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/omitogun-sherifat-ajoke/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/Adejokemi_472" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Vincent.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Nkem Vincent Nweke</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/Nkemakolamuko/" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/nkem-vincent-288457281/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="http://twitter.com/NwekeVincent14" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Mustapha.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Anthonio Mustapha</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/engamo" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mustapha-anthonio" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/engamo123?t=hkh3ffve6f4nxq-PmiUS8g&s=09" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Uthman.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Dantata Uthman Bashir</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://www.linkedin.com/in/grace-adie-2a316510a/" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/uthman-bashir-dantata/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/uthman_dantata" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <img src="assets/Owen.png" alt="" class="max-w-sm rounded-3xl">
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 rounded-3xl group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
-              <h3 class="text-3xl">Febechukwu Owen</h3>
-              <p class="text-lg">Developer</p>
-              <div class="social-icons mt-2 flex gap-4">
-                <a href="https://github.com/febstar" class="text-white hover:text-blue-500">
-                  <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/febechukwu-onyeyili-619206262/" class="text-white hover:text-[#0077B5]">
-                  <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://twitter.com/febechukwu_owen" class="text-white hover:text-[#1DA1F2]">
-                  <i class="fab fa-twitter text-3xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="w-[90%] mx-auto border-b-2 border-black">
       <div class="flex justify-evenly items-center pb-10 pt-20"> 
-        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-phone text-3xl"></i><p>(+234) 8069 4876 90</p></div>
-        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-envelope text-3xl"></i><p>info@medease.com</p></div>
-        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-location-dot text-3xl"></i><p>20, kubwa road, Abuja Nigeria.</p></div>
+        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-phone text-3xl text-blue-500"></i><p>(+234) 8069 4876 90</p></div>
+        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-envelope text-3xl text-blue-500"></i><p>info@medease.com</p></div>
+        <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-location-dot text-3xl text-blue-500"></i><p>20, kubwa road, Abuja Nigeria.</p></div>
       </div>
     </section>
   
@@ -372,7 +177,7 @@
         <h3 class="text-2xl font-bold mb-5">Newsletter</h3>
         <div class="custom-div flex items-center bg-gray-200 rounded-md border-solid border-2">
             <input type="email" id="email" name="email" required class="pl-4 border-none focus:outline-none bg-transparent" placeholder="Enter Email">
-            <i class="fas fa-arrow-right text-2xl text-gray-800 mr-4"></i>
+            <i class="fas fa-arrow-right text-2xl text-blue-500 mr-4"></i>
         </div>
         <p class="font-small pt-4 text-gray-500">Get Latest Medical Articles</p>
       </div>
