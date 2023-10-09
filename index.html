@@ -19,34 +19,51 @@
   </head>
   <body class="h-full">
     <header>
-      <nav class="flex justify-around items-center my-4">
-        <img src="assets/remove-bg.png" alt="logo" class="w-18 h-16">
-        <div class="flex justify-between items-center">
-        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="https://med-ease.vercel.app/">Home</a>
-        <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="https://med-ease-about-page.vercel.app/">About</a>
-        <a class="px-3 hover:text-black-300 text-2xl  text-blue-600" href="https://med-ease.vercel.app/">Contact</a>
+      <nav class="bg-blue-500">
+        <div class="container mx-auto py-4 px-4 flex justify-between items-center">
+            <a href="https://med-ease.vercel.app/" class="text-white font-bold text-2xl">
+                <img src="assets/remove-bg.png" alt="Logo" class="w-16 h-16">
+            </a>
+            <div class="md:hidden">
+                <button id="hamburger" class="focus:outline-none">
+                  <ion-icon name="menu" class="text-white text-4xl"></ion-icon>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="https://med-ease.vercel.app/" class="text-white hover:text-gray-200 text-2xl cursor-pointer">Home</a>
+                <a href="https://med-ease-about-page.vercel.app/" class="text-white hover:text-gray-200 text-2xl cursor-pointer">About</a>
+                <a href="https://med-ease.vercel.app/" class="text-white hover:text-gray-200 text-2xl cursor-pointer">Contact</a>
+            </div>
+            <a href="https://med-ease.vercel.app/" class="md:inline-block hidden px-4 py-2 bg-white text-2xl hover:bg-gray-200 text-blue-500 font-bold rounded-lg shadow">Login</a>
         </div>
-        <a href="https://med-ease.vercel.app/"><button type="submit" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-bold py-3 px-8 text-2xl rounded-lg shadow-lee">Login</button></a>
-      </nav>
+        <div class="hidden md:hidden" id="mobileMenu">
+            <ul class="bg-white mt-2 text-center">
+                <li><a href="https://med-ease.vercel.app/" class="block py-2 px-4 hover:text-gray-200 text-xl cursor-pointer">Home</a></li>
+                <li><a href="https://med-ease-about-page.vercel.app/" class="block py-2 px-4 hover:bg-gray-200 text-xl cursor-pointer">About</a></li>
+                <li><a href="https://med-ease.vercel.app/" class="block py-2 px-4 hover:bg-gray-200 text-xl cursor-pointer">Contact</a></li>
+                <li><a href="https://med-ease.vercel.app/" class="inline-block py-2 px-4 bg-blue-500 hover:bg-gray-200 text-white font-bold text-xl rounded-lg mb-4 cursor-pointer">Login</a></li>
+            </ul>
+        </div>
+    </nav>
     </header>
       
     <main>
         <section>
-          <div class="relative">
-            <img src="assets/hero-image (1).png" alt="Background Image" class="w-full h-auto">
+          <div class="relative mb-8 lg:mb-0">
+            <div class="w-full"><img src="assets/hero-image (1).png" alt="Background Image" class="h-full"></div>
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full text-white text-center">
-              <h1 class="font-inter text-[96px] font-bold">About us</h1>
-              <p class="font-inter text-[30px] font-semibold">MedEase: Your Healthcare, Companion.</p>
+            <div class="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full text-white text-center">
+                <h1 class="font-inter text-[50px] md:text-[96px] font-bold">About us</h1>
+                <p class="font-inter text-[20px] md:text-[30px] font-semibold mb-0 md:mb-40">MedEase: Your Healthcare, Companion.</p>
             </div>
           </div>
         </section>
   
-        <section class="bg-gray-100 h-auto flex flex-col items-center justify-center -mb-40">
+        <section class="bg-gray-100 h-auto flex flex-col gap-16 lg:gap-0 items-center justify-center">
   
-          <div class="flex justify-center items-stretch max-w-full h-1/2 text-left text-[rgba(0, 0, 0, 0.71)] relative bottom-40 z-10">
+          <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 justify-center items-stretch max-w-full h-1/2 text-left text-[rgba(0, 0, 0, 0.71)] relative bottom-0 md:bottom-40 z-10">
             <div class="bg-white max-w-md h-full px-8 py-8">
-              <h2 class="font-inter text-[30px] font-bold mb-4 text-center">WE ARE MEDEASE</h2>
+              <h2 class="font-inter text-[25px] md:text-[30px] font-bold mb-4 text-center">WE ARE MEDEASE</h2>
               <p class="font-inter text-[16px] leading-5 tracking-[0.2px] mb-4 font-semibold">Introducing MedEase: Your  Healthcare  Companion</p>
               <p class="font-inter text-[16px] text-black-400 leading-6 tracking-[0.2px] mb-4">
                 At MedEase, we understand the importance of staying on top of your health and wellness journey, especially when it comes to managing your medications. We're thrilled to introduce MedEase, a cutting-edge medication management app designed to simplify your life and empower you to take control of your health with confidence</p>
@@ -55,21 +72,21 @@
             <div class="max-w-md"><img src="assets/hero-image (3).png" alt="" class="h-full"></div>
           </div>
   
-          <div class="flex justify-normal items-stretch w-[100%] relative bottom-40 z-10">
-            <div class="w-1/2"><img src="assets/hero-image (2).png" alt="" class="h-full"></div>
+          <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-center lg:justify-center items-center lg:items-stretch max-w-full h-1/2 relative bottom-0 md:bottom-40 z-10">
+            <div class="w-full lg:w-1/2"><img src="assets/hero-image (2).png" alt="" class="h-full"></div>
   
-            <div class="w-1/2 bg-white px-10 py-8 h-full text-left text-[rgba(0, 0, 0, 0.71)]">
-              <div class="px-10">
-                <h2 class="font-inter text-[40px] font-bold mb-4">Why Choose Us</h2>
+            <div class="w-full lg:w-1/2 bg-white px-10 py-8 h-full text-left text-[rgba(0, 0, 0, 0.71)]">
+              <div class="px-0 md:px-10">
+                <h2 class="font-inter text-[30px] md:text-[40px] font-bold mb-4">Why Choose Us</h2>
                 <p class="font-inter text-[16px] text-black-600 leading-5 tracking-[0.2px] mb-16">We are committed to patient safety. We are committed to providing safe and effective medication management services. We have a rigorous screening process to ensure that only qualified professionals work with our patients.</p>
               </div>
                 
              
-            <div class="flex justify-between items-stretch gap-16 h-full">
+            <div class="flex flex-col md:flex-row justify-between items-stretch gap-16 h-full">
   
               <div class="flex flex-col">
   
-                <div class="flex justify-between items-start gap-4 mb-8 h-full"> 
+                <div class="flex items-start gap-4 mb-8 h-full"> 
                   <div><i class="fa-solid fa-user text-3xl text-blue-500"></i></div>
                     <div>
                         <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
@@ -79,8 +96,8 @@
                       </p>
                   </div>
                 </div>
-               
-                <div class="flex justify-between items-start gap-4 mb-8 h-full">
+  
+                <div class="flex items-start gap-4 mb-8 h-full">
                   <div><i class="fa-solid fa-clock text-3xl text-blue-500"></i></div>
                   <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
@@ -91,7 +108,7 @@
                   </div>
                 </div>
   
-                <div class="flex justify-between items-start gap-4 mb-8 h-full">
+                <div class="flex items-start gap-4 mb-8 h-full">
                   <div><i class="fa-solid fa-bell text-3xl text-blue-500"></i></div>
                   <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
@@ -101,22 +118,26 @@
                     </p>
                   </div>
                 </div>
+  
               </div>
   
-              <div class="flex flex-col items-stretch">
-  
-                <div class="flex justify-between items-start gap-4 mb-8 h-full">
-                  <div class="w-8"><i class="fa-solid fa-capsules text-3xl text-blue-500"></i></div>
-                    <div>
-                      <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
+              <div class="flex flex-col items-stretch w-fit">
+
+                <div class="flex items-start gap-4 mb-8 h-full">
+                  <div class="w-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="currentColor" class="bi bi-capsule text-3xl text-blue-500" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
                       Refill Status</p>
-                      <p class="font-inter text-[12px] text-black-400 leading-6 tracking-[0.2px]">
-                      Receive timely updates when medications are running low.
-                    </p>
+                    <p class="font-inter text-[12px] text-black-400 leading-6 tracking-[0.2px]">
+                      Receive timely updates when medications are running low.</p>
                   </div>
                 </div>
-  
-                <div class="flex justify-between items-start gap-4 mb-8 h-full">
+
+                <div class="flex items-start gap-4 mb-8 h-full">
                   <div class="w-8"><i class="fa-solid fa-lightbulb text-3xl text-blue-500"></i></div>
                   <div>
                     <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
@@ -127,7 +148,7 @@
                   </div>
                 </div>
                 
-                <div class="flex justify-between items-start gap-4 mb-8 h-full">
+                <div class="flex items-start gap-4 mb-8 h-full">
                   <div class="w-8"><i class="fa-solid fa-bell text-3xl text-blue-500"></i></div>
                     <div>
                       <p class="font-inter text-[16px] font-semibold mb-1 text-black-400 leading-6 tracking-[0.2px]">
@@ -146,16 +167,16 @@
         <section class="pt-[50px] pb-[100px] bg-gray-100">
       <div class="w-[90%] mx-auto pt-[50px]">
           <div class="flex justify-between items-center mb-10">
-            <h2 class="font-inter text-[50px] font-bold">Meet our Team</h2>
+            <h2 class="font-inter text-[30px] md:text-[50px] font-bold">Meet our Team</h2>
             <div class="w-[100px]">
-              <ion-icon onclick="left()" class="text-[45px] text-[#0085FF]" name="arrow-back-circle-outline"></ion-icon>
-              <ion-icon onclick="right()" class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+              <ion-icon onclick="left()" class="text-[40px] md:text-[45px] text-[#0085FF]" name="arrow-back-circle-outline"></ion-icon>
+              <ion-icon onclick="right()" class="text-[40px] md:text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
             </div>        
           </div>
     
         <div id="team" class="flex gap-8 mx-auto overflow-x-scroll no-scrollbar scroll-smooth scrollbar-hide items-center">
           <div class="relative group">
-            <img src="assets/Grace.png" alt="" class="max-w-sm">
+            <img src="assets/Grace.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Adie Grace</h3>
               <p class="text-lg">Developer</p>
@@ -173,7 +194,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Henry.png" alt="" class="max-w-sm">
+            <img src="assets/Henry.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Ije Henry</h3>
               <p class="text-lg">Developer</p>
@@ -191,7 +212,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Aisosa.png" alt="" class="max-w-sm">
+            <img src="assets/Aisosa.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Aisosa Margeret</h3>
               <p class="text-lg">Developer</p>
@@ -209,7 +230,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Kawthar.png" alt="" class="max-w-sm">
+            <img src="assets/Kawthar.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Sulaiman Kawthar</h3>
               <p class="text-lg">Developer</p>
@@ -227,7 +248,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Soliu.png" alt="" class="max-w-sm">
+            <img src="assets/Soliu.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Adeosun Soliu</h3>
               <p class="text-lg">Developer</p>
@@ -245,7 +266,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Sherifah.png" alt="" class="max-w-sm">
+            <img src="assets/Sherifah.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-500">
               <h3 class="text-3xl">Omitogun Sherifat</h3>
               <p class="text-lg">Developer</p>
@@ -263,7 +284,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Vincent.png" alt="" class="max-w-sm">
+            <img src="assets/Vincent.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Nkem Vincent Nweke</h3>
               <p class="text-lg">Developer</p>
@@ -281,7 +302,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Mustapha.png" alt="" class="max-w-sm">
+            <img src="assets/Mustapha.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Anthonio Mustapha</h3>
               <p class="text-lg">Developer</p>
@@ -299,7 +320,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Uthman.png" alt="" class="max-w-sm">
+            <img src="assets/Uthman.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Dantata Uthman Bashir</h3>
               <p class="text-lg">Developer</p>
@@ -317,7 +338,7 @@
             </div>
           </div>
           <div class="relative group">
-            <img src="assets/Owen.png" alt="" class="max-w-sm">
+            <img src="assets/Owen.png" alt="" class="max-w-xs md:max-w-sm">
             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white flex flex-col justify-center items-center transition-opacity duration-300">
               <h3 class="text-3xl">Febechukwu Owen</h3>
               <p class="text-lg">Developer</p>
@@ -338,7 +359,7 @@
       </div>
     </section>
         <section class="w-[90%] mx-auto border-b-2 border-black">
-          <div class="flex justify-evenly items-center pb-10 pt-20"> 
+          <div class="flex flex-col gap-12 md:gap-0 md:flex-row flex-wrap justify-evenly items-center pb-10 pt-20"> 
             <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-phone text-3xl text-blue-500"></i><p>(+234) 8069 4876 90</p></div>
             <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-envelope text-3xl text-blue-500"></i><p>info@medease.com</p></div>
             <div class="flex flex-col gap-5 items-center justify-center"><i class="fa-solid fa-location-dot text-3xl text-blue-500"></i><p>20, kubwa road, Abuja Nigeria.</p></div>
@@ -346,11 +367,11 @@
         </section>
   
     </main>
-    <footer class="flex gap-[20px] my-[70px] w-[90%] mx-auto">
+    <footer class="flex flex-col md:flex-nowrap items-center md:flex md:flex-row gap-[40px] md:gap-[20px] my-[70px] w-[90%] mx-auto">
       <div class="w-1/2">
         <img src="assets/remove-bg.png" alt="" class="w-[150px]" />
       </div>
-      <div class="w-[50%] pl-[50px]">
+      <div class="w-[50%]">
         <p class="text-2xl font-bold mb-5">Useful Links</p>
         <div class="text-[14px] text-gray-500">
           <ul>
@@ -368,11 +389,11 @@
           routine further, making your health a top priority.
         </p>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col w-1/2">
         <h3 class="text-2xl font-bold mb-5">Newsletter</h3>
-        <div class="custom-div flex items-center bg-gray-200 rounded-md border-solid border-2">
+        <div class="custom-div flex items-center bg-gray-200 rounded-md border-solid border-2 w-[200px] relative">
             <input type="email" id="email" name="email" required class="pl-4 border-none focus:outline-none bg-transparent" placeholder="Enter Email">
-            <i class="fas fa-arrow-right text-2xl text-blue-500 mr-4"></i>
+            <i class="fas fa-arrow-right text-2xl text-blue-500 absolute right-2"></i>
         </div>
         <p class="font-small pt-4 text-gray-500">Get Latest Medical Articles</p>
       </div>
@@ -386,5 +407,13 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      const menuToggle = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
